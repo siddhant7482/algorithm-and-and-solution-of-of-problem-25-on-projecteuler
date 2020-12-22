@@ -1,0 +1,44 @@
+PROBLEM---------------------------------------------------------------------------------------------------
+The Fibonacci sequence is defined by the recurrence relation:
+Fn = Fn−1 + Fn−2, where F1 = 1 and F2 = 1.
+Hence the first 12 terms will be:
+F1 = 1
+F2 = 1
+F3 = 2
+F4 = 3
+F5 = 5
+F6 = 8
+F7 = 13
+F8 = 21
+F9 = 34
+F10 = 55
+F11 = 89
+F12 = 144
+The 12th term, F12, is the first term to contain three digits.
+What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
+
+PSEUDOCODE---------------------------------------------------------------------------------------------------
+#list to store the fibonacci numbers
+#added first two numbers of the 
+#fibonacci sequence
+fib = [0,1]
+#iterator
+i = 2
+#An infinite loop, breaks 
+#when the number is 1000 digits long
+while True:
+#using the function given in question
+fib_new = fib[i-1]+fib[i-2]
+Append the new fibonacci to the list
+Check for 1000 digits
+display (i)
+Loop Stops
+i = i+1
+
+ALGORITHM-----------------------------------------------------------------------------------------------------
+1.First, we initialise the basic values i.e., 0 & 1 to the Fibonacci List.
+2.Now, taking the variable I as 2 i.e., i = 2.
+3.Now, the loop will run until Fib_new = fib(i-1+fib) i – 2 [Fibonacci Formula]
+4.Appending the Fibonacci series to the list.
+5.The loop will now check until 1000 digits and then print ‘i’.
+6.Now, add +1 to the I and we will get our answer as 4782.
